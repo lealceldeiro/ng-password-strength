@@ -58,9 +58,12 @@ See `app/index.html` in the respository.
   * inner-class: inner bar class (i.e. 'progress-bar')
   * inner-class-prefix: inner bar class prefix (i.e. 'progress-bar-' => 'progress-bar-success')
   * outter-class-prefix: root element class prefix (i.e. 'progress-bar-' => 'progress-bar-success')
-  * low-strength-class: inner bar class for showing a low password strength (i.e. 'my-danger-class'), default: 'danger'
-  * middle-strength-class: inner bar class for showing a moderate password strength (i.e. 'my-warning-class'), default: 'warning'
-  * high-strength-class: inner bar class for showing a high password strength (i.e. 'my-success-class'), default: 'success'
+  * inner-low-strength-class: inner bar class for showing a low password strength (i.e. 'my-danger-class'), default: 'danger'
+  * outter-low-strength-class: outter bar class for showing a low password strength (i.e. 'my-danger-class'), default: 'danger'
+  * inner-middle-strength-class: inner bar class for showing a moderate password strength (i.e. 'my-warning-class'), default: 'warning'
+  * outter-middle-strength-class: outter bar class for showing a moderate password strength (i.e. 'my-warning-class'), default: 'warning'
+  * inner-high-strength-class: inner bar class for showing a high password strength (i.e. 'my-success-class'), default: 'success'
+  * outter-high-strength-class: outter bar class for showing a high password strength (i.e. 'my-success-class'), default: 'success'
 
   * calculation-mode: 'formula' (default) or 'entropy'. Formula is explained below
   * goal: only used in entropy mode. Fixes the amount to reach. Default: 96
