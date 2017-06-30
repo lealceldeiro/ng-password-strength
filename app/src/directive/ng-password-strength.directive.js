@@ -20,9 +20,12 @@
                 value: '=strength',
                 innerClassPrefix: '@?',
                 outterClassPrefix: '@?',
-                lowStrengthClass: '@?',
-                middleStrengthClass: '@?',
-                highStrengthClass: '@?',
+                outterLowStrengthClass: '@?',
+                innerLowStrengthClass: '@?',
+                outterMiddleStrengthClass: '@?',
+                innerMiddleStrengthClass: '@?',
+                outterHighStrengthClass: '@?',
+                innerHighStrengthClass: '@?',
                 innerClass: '@?',
                 cssMode: '@?', // CSS Mode. Can be 'bootstrap' or 'foundation'
                 calculationMode: '@?', // Strength calculation mode. Can be 'formula' or 'entropy'. Default: 'formula' to ensure backwards compatibility
@@ -93,19 +96,19 @@
                     case 0:
                     case 1:
                         return {
-                            outter: scope.outterClassPrefix + scope.lowStrengthClass || 'danger',
-                            inner: scope.innerClassPrefix + scope.lowStrengthClass || 'danger'
+                            outter: scope.outterClassPrefix + scope.outterLowStrengthClass || 'danger',
+                            inner: scope.innerClassPrefix + scope.innerLowStrengthClass || 'danger'
                         };
                     case 2:
                         return {
-                            outter: scope.outterClassPrefix + scope.middleStrengthClass || 'warning',
-                            inner: scope.innerClassPrefix + scope.middleStrengthClass || 'warning'
+                            outter: scope.outterClassPrefix + scope.outterMiddleStrengthClass || 'warning',
+                            inner: scope.innerClassPrefix + scope.innerMiddleStrengthClass || 'warning'
                         };
                     default:
                     // 100 or more
                         return {
-                            outter: scope.outterClassPrefix + scope.highStrengthClass || 'success',
-                            inner: scope.innerClassPrefix + scope.highStrengthClass || 'success'
+                            outter: scope.outterClassPrefix + scope.outterHighStrengthClass || 'success',
+                            inner: scope.innerClassPrefix + scope.innerHighStrengthClass || 'success'
                         };
                 }
             }
